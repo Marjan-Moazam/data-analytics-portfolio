@@ -67,7 +67,6 @@ dbt init
 ```
 
 Then configure:
-- `profiles.yml` with Snowflake connection details
 - `dbt_project.yml` for model settings
 - `packages.yml` to include `dbt_utils`
 
