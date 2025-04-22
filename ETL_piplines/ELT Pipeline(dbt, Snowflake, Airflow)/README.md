@@ -89,6 +89,7 @@ Inside `marts/`:
 - `int_order_items.sql`
 - `int_order_items_summary.sql`
 - `fct_orders.sql`
+
 ![](images/Snowflake.png)
 
 ### 4. Macros
