@@ -10,9 +10,9 @@ This project demonstrates a modern ELT (Extract, Load, Transform) data pipeline 
 - [Detailed Walkthrough](#detailed-walkthrough)  
 - [Future Improvements](#future-improvements)  
 
-## 📌 Overview
+## Overview
 
-The goal is to build an end-to-end analytics workflow:
+📌The goal is to build an end-to-end analytics workflow:
 
 - Set up Snowflake roles and permissions
 - Initialize and configure a dbt project
@@ -20,9 +20,9 @@ The goal is to build an end-to-end analytics workflow:
 - Add reusable macros and tests
 - Deploy and schedule models using Apache Airflow with Astronomer Cosmos
 
-## 🏗️ Architecture
+## Architecture
 
-```plaintext
+🏗️```plaintext
 Snowflake TPCH Data
       │
       ▼
@@ -38,7 +38,7 @@ dbt (Intermediate & Fact Models)
    Airflow DAGs (via Cosmos)
 ```
 
-## ⚙️ Setup and Configuration
+## setup-and-configuration
 
 ### 1. Snowflake Environment
 
@@ -70,7 +70,8 @@ Then configure:
 - `dbt_project.yml` for model settings
 - `packages.yml` to include `dbt_utils`
 
-## 🧠 Detailed Walkthrough
+🧠
+## Detailed Walkthrough
 
 ### 1. Source Configuration
 
@@ -100,7 +101,8 @@ Inside `marts/`:
 - `generic_test.yml` for reusable checks
 - `fct_orders_date_valid.sql` and `fct_orders_discount.sql` for custom assertions
 
-## 🚀 Airflow Deployment
+🚀
+## Airflow Deployment
 
 ### 1. Install and Initialize
 
@@ -133,7 +135,8 @@ astro dev start
 Trigger the DAG when ready!
 ![](images/Airflow_DAG.png)
 
-## 🌱 Future Improvements
+🌱
+## Future Improvements
 
 - Add logging and alerting for Airflow DAGs
 - Automate deployment via CI/CD (GitHub Actions)
